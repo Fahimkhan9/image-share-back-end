@@ -1,5 +1,6 @@
 const express = require("express");
 const cors = require("cors");
+
 const mongoose = require("mongoose");
 const router = require("./routes/authRoute");
 require("dotenv").config({ path: "./config/.env" });
@@ -9,6 +10,8 @@ const port = process.env.PORT || 5000;
 //middleware
 app.use(cors());
 app.use(express.json());
+//view  engine
+app.set("view engine", "ejs");
 
 const dburi = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.vigvf.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority`;
 

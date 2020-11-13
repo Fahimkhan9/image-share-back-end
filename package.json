@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -12,10 +13,12 @@
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
+    "ejs": "^3.1.5",
     "express": "^4.17.1",
     "json-web-token": "^3.2.0",
     "mongodb": "^3.6.3",
     "mongoose": "^5.10.14",
+    "nodemon": "^2.0.6",
     "validator": "^13.1.17"
   }
 }
